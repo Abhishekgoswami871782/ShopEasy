@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Shopping Website</title>
+   <link rel="stylesheet" href="./index.css">
+  
+</head>
+<body>
+  <header class="header-container">
+    <h1>ShopEasy</h1>
+    <nav>
+      <a href="../Home/index.html">Home</a>
+      <a href="../page/index.html">Products</a>
+      
+    </nav>
+  </header>
+  <section class="products">
+    <div class="product">
+      <img src="../images/Sports.jpg" alt="Shoes">
+      <h3>Sports Shoes</h3>
+      <p>₹1499</p>
+      <button onclick="addToCart('Sports Shoes', 1499)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="../images/Smart_Watch.jpg" alt="Watch">
+      <h3>Smart Watch</h3>
+      <p>₹2999</p>
+      <button onclick="addToCart('Smart Watch', 2999)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="../images/shirts.jpg" alt="Watch">
+      <h3>Shrit</h3>
+      <h3>Roadster</h3>
+      <p>₹2999</p>
+      <button onclick="addToCart('Smart Watch', 2999)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="../images/t-shirt.jpg" alt="Watch">
+      <h3>Wrong</h3>
+      <h3> T-Shrit</h3>
+      <p>₹2999</p>
+      <button onclick="addToCart('Smart Watch', 2999)">Add to Cart</button>
+    </div>
+  </section>
+
+  <section class="cart">
+    <h2>Shopping Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: ₹<span id="total">0</span></p>
+  </section>
+
+  <script src="../page/script.js"></script>
+</body>
+</html>
